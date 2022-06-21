@@ -1,0 +1,32 @@
+.app {
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    height:100vh;
+    display:grid;
+    grid-template-areas: 
+    "cabeçalho"
+    "conteudo"
+    "footer"
+    ;
+    grid-template-rows:75px auto auto; 
+    background-color:rgba(128, 128, 128, 0.308);
+}
+
+.cabecalho {
+    display:flex;
+    align-items: center;
+    grid-area:cabeçalho;
+}
+ 
+.conteudo {
+    grid-area:conteudo;
+
+}
+
+.rodape {
+    grid-area:footer;
+    background-color: white;
+    text-align: center;
+    padding:1em 0;
+
+}
